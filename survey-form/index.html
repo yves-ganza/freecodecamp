@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Survey Form</title>
 </head>
@@ -15,15 +17,15 @@
         </div>
 
         <form action="" id='survey-form'>
-            <label for="name">Name</label>
+            <label for="name" id="name-label">Name</label>
             <input type="text" id='name' name="name"  placeholder="Enter your name" required>
-            <label for="email">Email</label>
+            <label for="email" id="email-label">Email</label>
             <input type="email" id='email' name="email" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" placeholder="Enter your Email address" required>
-            <label for="age">Age(optional)</label>
-            <input type="number" id='age' name="age" placeholder="Age" min="10" max="150">
+            <label for="number" id="number-label">Age(optional)</label>
+            <input type="number" id='number' name="age" placeholder="Age" min="10" max="150">
             <div class="dropdown">
-                <label for="dropdown-1">Which option best describes your current role?</label>
-                <select name="dropdown-1" id="dropdown-1" required>
+                <label for="dropdown">Which option best describes your current role?</label>
+                <select name="dropdown" id="dropdown" required>
                     <option value="">--Please select an option--</option>
                     <option value="student">Student</option>
                     <option value="fulltime-job">Full Time Job</option>
@@ -33,14 +35,20 @@
                 </select>                
             </div>
 
-            <div>
-                <label for="recommend">Would you recommend freeCodeCamp to a friend?</label>
-                <input type="radio" name="recommend" id="definitely" value="definitely">
-                <label for="definitely">Definitely</label>
-                <input type="radio" name="recommend" id="maybe" value="maybe">
-                <label for="maybe">Maybe</label>
-                <input type="radio" name="recommend" id="not-sure" value="not-sure">
-                <label for="not-sure">Not sure</label>            
+            <div id="recommend-container">
+                <p>Would you recommend freeCodeCamp to a friend?</p>
+                <div>
+                    <input type="radio" name="recommend" id="definitely" value="definitely">
+                    <label for="definitely">Definitely</label>                    
+                </div>
+                <div>
+                    <input type="radio" name="recommend" id="maybe" value="maybe">
+                    <label for="maybe">Maybe</label>
+                </div>
+                <div>
+                    <input type="radio" name="recommend" id="not-sure" value="not-sure">
+                    <label for="not-sure">Not sure</label> 
+                </div>
             </div>
 
             <div class="dropdown">
@@ -74,7 +82,7 @@
                 </div>
                 <div>
                     <input type="checkbox" name="improved" id="open-source" value="open-source">
-                    <label for="open-sources">Open Source Community</label>
+                    <label for="open-source">Open Source Community</label>
                 </div>
                 <div>
                     <input type="checkbox" name="improved" id="gitter-help" value="gitter-help-rooms">
@@ -93,7 +101,7 @@
                     <label for="wiki">Wiki</label>
                 </div>
                 <div>
-                    <input type="checkbox" name="improved" id="forum" vaalue="forum">
+                    <input type="checkbox" name="improved" id="forum" value="forum">
                     <label for="forum">Forum</label>
                 </div>
                 <div>
