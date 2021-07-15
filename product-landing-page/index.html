@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Product Landing Page</title>
 </head>
 <body>
     <div id="page-wrapper">
         <header id="header">
-            <img src="https://www.universetoday.com/wp-content/uploads/2017/02/dragoncrew.8k.jpg" alt="header image" id="header-img">
             <nav id="nav-bar" class="nav-bar">
                 <ul>
                     <li class="nav-link"><a href="#features">Features</a></li>
@@ -18,18 +19,22 @@
                     <li class="nav-link"><a href="#form">Contact</a></li>
                 </ul>
             </nav>
-            <h2 id="title">DRAGON</h2>
-            <h4 id="title-description">SENDING HUMANS AND CARGO TO SPACE</h4>
+            <div id="title-wrapper">
+                <h2 id="title">DRAGON</h2>
+                <p id="title-description">SENDING HUMANS AND CARGO TO SPACE</p>                
+            </div>
+            <div id="arrow-down">
+                <i class="fa fa-arrow-down"></i>
+            </div>
         </header>
         <div id="main-content-wrapper">
             <div id="features">
-                <p>The Dragon spacecraft is capable of carrying up to 7 passengers to and from Earth orbit, and beyond. It is the only spacecraft currently flying that is capable of returning significant amounts of cargo to Earth, and is the first private spacecraft to take humans to the space station.</p>
-                <div id="video">
-                    <video src="https://www.spacex.com/static/images/backgrounds/dragon_video.webp"></video>
-                </div>
+                
             </div>
-
-            <div id="overview">
+            <div id="video" class="full-screen">
+                <iframe  src="https://www.youtube.com/embed/78ATfCaBn6E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" width="100%" height="100%" allowfullscreen></iframe>
+            </div>
+            <div id="overview" class="full-screen">
                 <div id="overview-main">
                     <p class="dragon-title">DRAGON</p>
                     <h1>Overview</h1>
@@ -57,7 +62,7 @@
                         <h2>OVERVIEW</h2>
                         <p>The Dragon capsule, also known as the pressurized section, allows for the transport of people as well as environmentally sensitive cargo. Dragon is equipped with Draco thrusters that allow Dragon to maneuver while on orbit and 8 SuperDracos that power the spacecraft’s launch escape system.</p>
                         <ul>
-                            <li class="underlined">9.3m³ / 328ft³</li>
+                            <li class="underlined">VOLUME   9.3m³ / 328ft³</li>
                         </ul>
                     </div>
                     <div id="capsule-launch-abort">
@@ -69,7 +74,7 @@
                         </ul>
                     </div>
                     <div id="capsule-attitude-control">
-                        <h2>LAUNCH ABORT</h2>
+                        <h2>ATTITUDE CONTROL</h2>
                         <p>The Dragon spacecraft is equipped with 16 Draco thrusters used to orient the spacecraft during the mission, including apogee/perigee maneuvers, orbit adjustment and attitude control. Each Draco thruster is capable of generating 90 pounds of force in the vacuum of space.</p>
                         <ul>
                             <li class="underlined">NUMBER OF ENGINES	16</li>
@@ -80,12 +85,12 @@
             </div>
             <div id="gallery">
                 <div id="album" class="album">
-                    <div class="album-item" style="background: url(https://www.spacex.com/static/images/dragon/DR_1.webp);"></div>
-                    <div class="album-item" style="background: url(https://www.spacex.com/static/images/dragon/DR_10.webp);"></div>
-                    <div class="album-item" style="background: url(https://www.spacex.com/static/images/dragon/DR_9.webp);"></div>
-                    <div class="album-item" style="background: url(https://www.spacex.com/static/images/dragon/DR_8.webp);"></div>
-                    <div class="album-item" style="background: url(https://www.spacex.com/static/images/dragon/DR_7.webp);"></div>
-                    <div class="album-item" style="background: url(https://www.spacex.com/static/images/dragon/DR_4.webp);"></div>
+                    <div class="album-item full-screen" style="background: url(https://www.spacex.com/static/images/dragon/DR_1.webp);"></div>
+                    <div class="album-item full-screen" style="background: url(https://www.spacex.com/static/images/dragon/DR_10.webp);"></div>
+                    <div class="album-item full-screen" style="background: url(https://www.spacex.com/static/images/dragon/DR_9.webp);"></div>
+                    <div class="album-item full-screen" style="background: url(https://www.spacex.com/static/images/dragon/DR_8.webp);"></div>
+                    <div class="album-item full-screen" style="background: url(https://www.spacex.com/static/images/dragon/DR_7.webp);"></div>
+                    <div class="album-item full-screen" style="background: url(https://www.spacex.com/static/images/dragon/DR_4.webp);"></div>
                 </div>
             </div>
         </div>
