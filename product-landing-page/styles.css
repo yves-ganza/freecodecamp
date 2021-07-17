@@ -3,6 +3,7 @@ html {
     background-color: black;
     color: white;
     overflow-x: hidden;
+    font-family: 'Assistant', sans-serif;
 }
 
 body {
@@ -12,6 +13,13 @@ body {
 .full-screen {
     width: 100vw;
     height: 100vh;
+}
+
+.background-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
 }
 
 #page-wrapper {
@@ -106,11 +114,129 @@ body {
 }
 
 #overview {
+    position: relative;
+}
+
+.scroller {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    bottom: 0px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.scroller a {
+    text-decoration: none;
+    color: white;
+    outline: none;
+    font-size: 2em;
+    opacity: 0.5;
+}
+
+.scroller a:active {
+    opacity: 0;
+}
+
+#overview > #wrapper{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+.pointer {
+    font-size: 5em;
+    line-height: 5em;
+    margin: auto 5px;
+}
+
+.dragon-title {
+    font-size: 25px;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+}
+
+.text-container{
+    width: 40%;
+    font-size: 1em;
+    line-height: 2em;
+    margin: auto 1em;
+    padding: 0 40px;
+}
+
+.text-container .title {
+    margin: 0;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.text-container ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.text-container li {
+    list-style: none;
+    padding: 1em 0;
+    border-bottom: 1px solid grey;
     display: flex;
     justify-content: space-between;
 }
 
-#overview > * {
-    flex: 1 1 0;
-    padding: 1em;
+.text-container p:nth-child(2) {
+    padding: 0;
+    margin: 0;
+}
+
+#overview > #wrapper > div {
+    flex: 0 0 auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#overview-main {
+    background: url(https://www.spacex.com/static/images/dragon/desktop/DragonTrunk_Render_Desktop.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+#overview-main > div {
+    justify-self: flex-start;
+}
+
+#overview-trunk {
+    background: url(https://www.spacex.com/static/images/dragon/desktop/Trunk_Render_Desktop.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#overview-capsule {
+    background: url(https://www.spacex.com/static/images/dragon/desktop/DragonDraco_Desktop.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+#overview-capsule .text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#overview-capsule .text-container > div {
+    display: flex;
+    overflow-x: scroll;
+}
+
+#overview-capsule .text-container > div > div {
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
 }
