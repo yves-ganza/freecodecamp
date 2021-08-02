@@ -23,8 +23,8 @@ body {
 }
 
 #page-wrapper {
-     min-width: 100%;
-     min-height: 100%;
+     width: 100%;
+     height: 100%;
      overflow-y: scroll;
      overflow-x: hidden;
      scroll-snap-type: y mandatory;
@@ -45,6 +45,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    position: relative;
  }
 
 #title-wrapper {
@@ -184,11 +185,6 @@ body {
     padding: 0 40px;
 }
 
-.text-container .title {
-    margin: 0;
-    margin-bottom: 20px;
-    margin-top: 10px;
-}
 
 .text-container ul {
     margin: 0;
@@ -315,7 +311,6 @@ body {
     background-size: cover;
 }
 
-
 #form {
     width: 100%;
     height: auto;
@@ -328,7 +323,7 @@ body {
     }
 }
 
-#form > * {
+#form > input {
     display: block;
     box-sizing: border-box;
     margin: 5px auto;
@@ -360,4 +355,10 @@ body {
 #footer > .nav-bar {
     width: 100%;
     margin-top: auto;
+}
+
+.title {
+    margin: 0;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
