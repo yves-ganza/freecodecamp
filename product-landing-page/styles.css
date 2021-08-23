@@ -299,7 +299,7 @@ body {
     box-shadow: 10px 0 20px rgb(123, 146, 189), 6px 0 6px rgba(40, 48, 53, 0.993);
 }
 
-@media screen, (max-width: 992px) {
+@media screen, (max-width: 762px) {
     .gallery > img {
         width: 90vw;
         height: 100vh;
