@@ -1,3 +1,2 @@
-# Freecodecamp Challenges
+# Freecodecamp Challenges - Survey Form
 
-This repository contains all freecodecamp projects I have fully completed.
